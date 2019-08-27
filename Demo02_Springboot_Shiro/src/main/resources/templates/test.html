@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<meta>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+</head>
+<body>
+<h3 th:text="${name}"></h3>
+<div shiro:hasPermission="user:add">
+<a href="add">添加页面</a>
+</div>
+<div shiro:hasPermission="user:update">
+<a href="update">修改页面</a>
+</div>
+<a href="/toLogin"></a>
+</body>
+</html>
